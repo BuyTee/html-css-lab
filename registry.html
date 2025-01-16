@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+	<style>
+	input{
+	margin-top:5px;
+	margin-bottom: 10px;
+	}
+	button{
+	margin-top:10px;
+	}
+	</style>
+</head>
+<body>
+    <h2>Форма реєстрації</h2>
+    <form action="/submit" method="POST">
+        <label for="user_name">Прізвище, ім'я, по батькові:</label>
+		<br>
+        <input type="text" id="user_name" name="user_name" required>
+        <br>
+
+        <label for="user_email">E-mail:</label>
+		<br>
+        <input type="email" id="user_email" name="user_email">
+        <br>
+
+        <label for="user_birthdate">Дата народження:</label>
+		<br>
+        <input type="date" id="user_birthdate" name="user_birthdate" required>
+        <br>
+
+        <label for="user_sex">Стать:</label>
+		<br>
+        <select id="user_sex" name="user_sex" required>
+            <option value="Чоловіча">Чоловіча</option>
+            <option value="Жіноча">Жіноча</option>
+        </select>
+        <br>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</body>
+</html>
